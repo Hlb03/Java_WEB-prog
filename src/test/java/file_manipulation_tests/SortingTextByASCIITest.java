@@ -1,4 +1,4 @@
-/*
+package file_manipulation_tests;/*
   User: admin
   Cur_date: 27.09.2022
   Cur_time: 9:09
@@ -57,5 +57,10 @@ public class SortingTextByASCIITest {
     @Test
     public void simpleASCIISortTest() {
         Assert.assertEquals(SortByAsciiCode.sortByAscii("D,MALo\nqT pR."), "\n ,.ADLMRTopq");
+    }
+
+    @Test
+    public void simpleASCIISortOnDigits() {
+        Assert.assertEquals(SortByAsciiCode.sortByAscii("053229035"), "002233559");
     }
 }
