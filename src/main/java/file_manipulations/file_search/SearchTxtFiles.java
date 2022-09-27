@@ -58,6 +58,8 @@ public class SearchTxtFiles implements Runnable {
                     }
                 }
             }
+        } else {
+            System.out.println(file + " directory is empty.");
         }
 
     }
